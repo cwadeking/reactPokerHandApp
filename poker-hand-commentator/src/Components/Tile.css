@@ -1,0 +1,38 @@
+
+.PlayerTile{
+    border: solid;
+    border-width: 5px;
+    height: 150px;
+    width: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0px;
+    align-items: center;
+    border-radius: 28%;
+}
+
+.CardColumn{
+    float: left;
+}
+.PlayerTile-PlayerName{
+    font-size: small;
+    text-align: center;
+}
+
+.PlayerTile-PlayerPosition{
+    font-weight: bold;
+    font-size: smaller;
+    text-align: center;
+}
+
+.PlayerTile-TwoCards{
+    margin-top: 2px;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.PlayerTile-PlayerInfo{
+    margin: 3px;
+    padding: 3px;
+    
+}
