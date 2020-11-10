@@ -1,5 +1,6 @@
 
 import './App.css';
+import Table from './Components/Table';
 import Tile from './Components/Tile';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div >
       <div><p></p></div>
       <center>
-        <Tile playerName = "Teddy KGB" position = "Button"/>      
+        <Table />
+        {/* <Tile playerName = "Teddy KGB" position = "Button"/>       */}
       </center>
     </div>
   );
