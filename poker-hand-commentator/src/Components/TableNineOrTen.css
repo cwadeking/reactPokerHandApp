@@ -36,8 +36,15 @@
 .PlayerTile-Top-Center{
     margin-top: 5px;
 }
-.PlayerTile-Bottom-Center{
-    margin-top: 80px;
+.PlayerTile-Bottom-Center-Left{
+    position: absolute;
+    top: 780px;
+    left: 750px; 
+}
+.PlayerTile-Bottom-Center-Right{
+    position: absolute;
+    top: 780px;
+    right: 750px;
 }
 .PlayerTile-Left-Center{
     position: absolute;
@@ -71,4 +78,14 @@
     position: absolute;
     top: 720px;
     left: 490px;
+}
+.PlayerTile-Top-Center-Left{
+    position: absolute;
+    top: 250px;
+    left: 750px; 
+}
+.PlayerTile-Top-Center-Right{
+    position: absolute;
+    top: 250px;
+    right: 750px;
 }
