@@ -1,15 +1,39 @@
 import './Table.css';
 import Tile from './Tile';
 import PokerChip from './Images/pokerCoaching.png';
+import Card from './Card';
 
 function Table(props){
     return(
         <div className = "TableOutline">
-            <br></br><br></br><br></br><br></br><br></br>
-            <img id = 'pokerChip' alt = 'pokerChip' src = {PokerChip}></img>
-            <br></br><br></br><br></br><br></br><br></br>
-            <div className = "CardBracket">
-
+            <div className = "PlayerTile-Top-Center">    
+                <Tile />
+            </div>
+                <div id = "logo">
+                    <img id = 'pokerChip' alt = 'pokerChip' src = {PokerChip}></img>
+                </div>
+                
+                <div className = "CardBracket">
+                    <div className = "CardRow">
+                        <div className = "CardBracket-Column">
+                            <Card name = "4" suitType = "spades"/>
+                        </div>    
+                        <div className = "CardBracket-Column">   
+                            <Card name = "4" suitType = "spades"/>
+                        </div>
+                        <div className = "CardBracket-Column">
+                            <Card name = "4" suitType = "spades"/>
+                        </div>    
+                        <div className = "CardBracket-Column">   
+                            <Card name = "4" suitType = "spades"/>
+                        </div>
+                        <div className = "CardBracket-Column">
+                            <Card name = "4" suitType = "spades"/>
+                        </div>
+                    </div>    
+                </div>
+            <div className = "PlayerTile-Bottom-Center">    
+                <Tile />
             </div>
         </div>
     )
