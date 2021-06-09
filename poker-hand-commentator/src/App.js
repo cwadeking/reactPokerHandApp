@@ -14,12 +14,34 @@ import Tile from './Components/Tile';
 function App() {
   var componentType = testComponent();
   function testComponent(){
-    return <TableTenPlayer />;
+    let tableSize = prompt("How many players?");
+    switch(tableSize){
+      case "2":
+        return <Table />;
+      case "3":
+        return <TableThreePlayer />;
+      case "4":
+        return <TableFourPlayer />;          
+      case "5":
+        return <TableFivePlayer />;            
+      case "6":
+        return <TableSixPlayer />;              
+      case "7":
+        return <TableSevenPlayer />;
+      case "8":
+        return <TableEightPlayer />;
+      case "9":
+        return <TableNinePlayer />;
+      case "10":
+        return <TableTenPlayer />;
+      default:
+        return testComponent();
+    }
   }
 
   return (
+    
     <div >
-      <div><p></p></div>
       <center>
         {componentType}
       </center>

@@ -4,6 +4,7 @@
   "description": "poker_hand_reader",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,6 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.2",
-    "mongoose": "^5.10.15"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7"
   }
 }
