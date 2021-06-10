@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
-import clubImage from './Images/club.png';
-import spadeImage from './Images/spade.png';
-import diamondImage from './Images/diamond.png';
-import heartImage from './Images/heart.png';
+import clubImage from '../Images/club.png';
+import spadeImage from '../Images/spade.png';
+import diamondImage from '../Images/diamond.png';
+import heartImage from '../Images/heart.png';
 
 function Card(props){
     const cardInformation = props.name;

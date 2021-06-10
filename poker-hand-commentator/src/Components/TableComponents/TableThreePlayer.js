@@ -1,7 +1,7 @@
 import './Table.css';
-import Tile from './Tile';
-import PokerChip from './Images/pokerCoaching.png';
-import Card from './Card';
+import Tile from '../TileComponents/Tile';
+import PokerChip from '../Images/pokerCoaching.png';
+import Card from '../CardComponents/Card';
 
 function TableThreePlayer(props){
     return(
@@ -18,20 +18,20 @@ function TableThreePlayer(props){
                 
                 <div className = "CardBracket">
                     <div className = "CardRow">
-                        <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                    <div className = "CardBracket-Column">
+                            <Card name ={props.flopCardOneValue}suitType = {props.flopCardOneSuitValue}/>
                         </div>    
                         <div className = "CardBracket-Column">   
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.flopCardTwoValue}suitType = {props.flopCardTwoSuitValue}/>
                         </div>
                         <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name ={props.flopCardThreeValue}suitType = {props.flopCardThreeSuitValue}/>
                         </div>    
                         <div className = "CardBracket-Column">   
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.turnCardValue}suitType = {props.turnCardSuitValue}/>
                         </div>
                         <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.riverCardValue}suitType = {props.riverCardSuitValue}/>
                         </div>
                     </div>    
                 </div>

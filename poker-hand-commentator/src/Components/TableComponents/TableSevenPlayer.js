@@ -1,9 +1,9 @@
 import './Table.css';
-import Tile from './Tile';
-import PokerChip from './Images/pokerCoaching.png';
-import Card from './Card';
+import Tile from '../TileComponents/Tile';
+import PokerChip from '../Images/pokerCoaching.png';
+import Card from '../CardComponents/Card';
 
-function TableEightPlayer(props){
+function TableSevenPlayer(props){
     return(
         <div className = "TableOutline">
             <div className = "PlayerTile-Top-Center">    
@@ -27,20 +27,20 @@ function TableEightPlayer(props){
                 
                 <div className = "CardBracket">
                     <div className = "CardRow">
-                        <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                    <div className = "CardBracket-Column">
+                            <Card name ={props.flopCardOneValue}suitType = {props.flopCardOneSuitValue}/>
                         </div>    
                         <div className = "CardBracket-Column">   
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.flopCardTwoValue}suitType = {props.flopCardTwoSuitValue}/>
                         </div>
                         <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name ={props.flopCardThreeValue}suitType = {props.flopCardThreeSuitValue}/>
                         </div>    
                         <div className = "CardBracket-Column">   
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.turnCardValue}suitType = {props.turnCardSuitValue}/>
                         </div>
                         <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.riverCardValue}suitType = {props.riverCardSuitValue}/>
                         </div>
                     </div>    
                 </div>
@@ -50,11 +50,8 @@ function TableEightPlayer(props){
             <div className = "PlayerTile-Bottom-Right">
                 <Tile />
             </div>
-            <div className = "PlayerTile-Bottom-Left">
-                <Tile />
-            </div>
         </div>
     )
 }
 
-export default TableEightPlayer;
+export default TableSevenPlayer;

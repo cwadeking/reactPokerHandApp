@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../CardComponents/Card';
 import './Tile.css';
 
 function Tile(props){
@@ -7,10 +7,10 @@ function Tile(props){
         <div className = "PlayerTile">
             <div className = "PlayerTile-TwoCards">
                 <div className = "CardColumn">
-                    <Card name = "4" suitType = "spades"/>
+                    <Card name = {props.cardValue} suitType = {props.suitValue}/>
                 </div>    
                 <div className = "CardColumn">   
-                    <Card name = "4" suitType = "spades"/>
+                    <Card name = {props.cardValue} suitType = {props.suitValue}/>
                 </div>
             </div>
             <div className = "PlayerTile-PlayerInfo">

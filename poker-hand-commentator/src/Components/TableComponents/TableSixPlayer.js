@@ -1,9 +1,9 @@
 import './Table.css';
-import Tile from './Tile';
-import PokerChip from './Images/pokerCoaching.png';
-import Card from './Card';
+import Tile from '../TileComponents/Tile';
+import PokerChip from '../Images/pokerCoaching.png';
+import Card from '../CardComponents/Card';
 
-function TableFourPlayer(props){
+function TableSixPlayer(props){
     return(
         <div className = "TableOutline">
             <div className = "PlayerTile-Top-Center">    
@@ -15,26 +15,32 @@ function TableFourPlayer(props){
             <div className = "PlayerTile-Right-Center">
                 <Tile />
             </div>
+            <div className = "PlayerTile-Top-Left">
+                <Tile />
+            </div>
+            <div className = "PlayerTile-Top-Right">
+                <Tile />
+            </div>
                 <div id = "logo">
                     <img id = 'pokerChip' alt = 'pokerChip' src = {PokerChip}></img>
                 </div>
                 
                 <div className = "CardBracket">
                     <div className = "CardRow">
-                        <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                    <div className = "CardBracket-Column">
+                            <Card name ={props.flopCardOneValue}suitType = {props.flopCardOneSuitValue}/>
                         </div>    
                         <div className = "CardBracket-Column">   
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.flopCardTwoValue}suitType = {props.flopCardTwoSuitValue}/>
                         </div>
                         <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name ={props.flopCardThreeValue}suitType = {props.flopCardThreeSuitValue}/>
                         </div>    
                         <div className = "CardBracket-Column">   
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.turnCardValue}suitType = {props.turnCardSuitValue}/>
                         </div>
                         <div className = "CardBracket-Column">
-                            <Card name = "4" suitType = "spades"/>
+                            <Card name = {props.riverCardValue}suitType = {props.riverCardSuitValue}/>
                         </div>
                     </div>    
                 </div>
@@ -45,4 +51,4 @@ function TableFourPlayer(props){
     )
 }
 
-export default TableFourPlayer;
+export default TableSixPlayer;
